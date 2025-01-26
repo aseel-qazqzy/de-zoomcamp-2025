@@ -38,3 +38,6 @@ terraform.rc
 
 # ignore key files
 *.json
+
+01-docker-terraform/docker_sql/ny_taxi_postgres_data/*
+01-docker-terraform/docker_sql/yellow_tripdata_2024-01.*
