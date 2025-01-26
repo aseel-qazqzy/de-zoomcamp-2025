@@ -8,12 +8,13 @@ terraform {
 }
 
 provider "google" {
-  project = "terrform-gcp-demo-449011"
-  region  = "europe-west3"
+  project     = var.project_id
+  region      = var.region
+  credentials = file(var.credentials)
 }
 resource "google_storage_bucket" "deom-bucket" {
-  name          = "terrform-gcp-demo-449011-terra-bucket"
-  location      = "europe-west3"
+  name          = var.gsc_bucket_name
+  location      = var.location
   force_destroy = true
 
   lifecycle_rule {
@@ -24,4 +25,9 @@ resource "google_storage_bucket" "deom-bucket" {
       type = "AbortIncompleteMultipartUpload"
     }
   }
+}
+
+resource "google_bigquery_dataset" "demo_dataset" {
+  dataset_id = var.bq_dataset_name
+  location   = var.location
 }
