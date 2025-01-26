@@ -1,1 +1,2 @@
-Module 1: Setting up the environment - Google Cloud Account, Docker, Terraform
+# de-zoomcamp-2025
+Data Engineering Zoomcamp
