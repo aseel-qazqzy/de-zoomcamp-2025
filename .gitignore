@@ -27,3 +27,5 @@ node_modules/
 *.parquet
 
 01-docker-terraform/docker_sql/ny_taxi_postgres_data/*
+01-docker-terraform/docker_sql/yellow_tripdata_2024-01.csv
+01-docker-terraform/docker_sql/ny_taxi_postgres_data/
