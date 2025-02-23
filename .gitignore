@@ -26,3 +26,4 @@ node_modules/
 # Ignore .parquet files
 *.parquet
 
+01-docker-terraform/docker_sql/ny_taxi_postgres_data/*
